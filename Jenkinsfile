@@ -12,7 +12,7 @@ pipeline {
 
     stage('Clone') {
       steps {
-        checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-creds', url: 'https://github.com/pravinksavant/example-voting-app.git']])
+        checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/pravinksavant/example-voting-app.git']])
       }
     }
 
